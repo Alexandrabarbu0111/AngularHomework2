@@ -8,7 +8,6 @@ import {ToDo} from "../todo/todo";
     styleUrls: ['./todo-delete.component.css']
 })
 export class TodoDeleteComponent {
-    myToDoList: ToDo[] = [];
     id: number = 0;
 
     constructor(private todoService: TodoService) {
@@ -16,9 +15,7 @@ export class TodoDeleteComponent {
     }
 
     deleteToDo(id: number) {
-        this.todoService.deleteToDo(id).subscribe(todo => {
-            this.myToDoList = this.myToDoList.filter(t => t.id !== id);
-        });
+        return this.todoService.deleteToDo(id).subscribe();
     }
 
 }
