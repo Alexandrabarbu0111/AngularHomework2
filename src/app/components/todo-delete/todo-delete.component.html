@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>To-Do App</title>
+</head>
+
+<body>
+
+<div class="container mt-4">
+    <div class="form-group">
+        <input type="text" [(ngModel)]="id" class="form-control custom-input" placeholder="Enter ToDo ID">
+    </div>
+    <button type="button" class="btn custom-button" (click)="deleteToDo(id)">Delete ToDo</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

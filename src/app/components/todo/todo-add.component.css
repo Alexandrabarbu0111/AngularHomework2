@@ -1,0 +1,22 @@
+.custom-button {
+    background-color: pink;
+    border: none;
+    color: white;
+}
+
+.custom-button:hover {
+    background-color: purple;
+}
+
+.custom-input {
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.custom-input:focus {
+    border-color: purple;
+}

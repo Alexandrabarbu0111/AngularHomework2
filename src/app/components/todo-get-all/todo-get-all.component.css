@@ -1,0 +1,8 @@
+.custom-button {
+    background-color: pink;
+    border: none;
+}
+
+.custom-button:hover {
+    background-color: purple;
+}
