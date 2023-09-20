@@ -21,8 +21,6 @@ export class TodoAddComponent {
         this.todoService.addToDo(this.myTitle, this.myDescription).subscribe(todo => {
             this.myToDoList.push(todo);
         });
-        this.myDescription = "";
-        this.myTitle = "";
     }
 
 
